@@ -1,0 +1,47 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=60pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+	\title{PH-105 Assignment Sheet - 2 (Quantum Mechanics)}
+	\date{}
+	\author{Umang Mathur}
+	\maketitle
+	\begin{enumerate}
+		\item[1.] {\bf Show that the Einstein's expression of specific heat gives a value of 3R at high temperatures and tends to zero as temperature tends to zero.}\\\\
+		{\underline {\bf Solution}} :\\
+		
+		Einsteins' expression of energy is given as follows: 
+		\begin{align*}
+			\varepsilon = 3N_{A} \frac{h\nu_{E}}{e^{\frac{h\nu_{E}}{kT}}-1}
+		\end{align*}
+		Hence, Specific heat $(C_{v})$, is given by
+		\begin{align*}
+				C_{v} &= \frac{\partial \varepsilon}{\partial T}\\
+				&= 3R (\frac{h\nu_{E}}{kT})^{2} \frac{e^{\frac{h\nu_{E}}{kT}}}{(e^{\frac{h\nu_{E}}{kT}}-1)^{2}}
+		\end{align*}
+		Let $\frac{h\nu_{E}}{kT} = \alpha$, then we have
+		\begin{align*}
+			C_{v} = 3R \frac{\alpha^{2} e^{\alpha}}{(e^{\alpha}-1)^{2}}
+		\end{align*}
+		Now, as $T \to \infty$, $\alpha \to 0$, hence,
+		\begin{align*}
+			\lim_{T \to \infty}C_{v} &= 3R \lim_{\alpha \to 0}\frac{\alpha^{2} e^{\alpha}}{(e^{\alpha}-1)^{2}}\\
+			&= 3R \lim_{\alpha \to 0} \frac{2\alpha e^{\alpha} + \alpha^{2}e^{\alpha}}{2e^{\alpha}(e^{\alpha}-1)}\\
+			&= 3R \lim_{\alpha \to 0} \frac{2\alpha + \alpha^{2}}{2e^{\alpha}-2}\\
+			&= 3R \lim_{\alpha \to 0} \frac{1+\alpha}{e^{\alpha}}\\
+			\therefore C_{v} &= 3R
+		\end{align*}
+		Again, as $T \to 0$, $\alpha \to \infty$, hence,
+		\begin{align*}
+			\lim_{T \to 0}C_{v} &= 3R \lim_{\alpha \to \infty}\frac{\alpha^{2} e^{\alpha}}{(e^{\alpha}-1)^{2}}\\
+			&= 3R \lim_{\alpha \to \infty} \frac{2\alpha e^{\alpha} + \alpha^{2}e^{\alpha}}{2e^{\alpha}(e^{\alpha}-1)}\\
+			&= 3R \lim_{\alpha \to \infty} \frac{2\alpha + \alpha^{2}}{2e^{\alpha}-2}\\
+			&= 3R \lim_{\alpha \to \infty} \frac{1+\alpha}{e^{\alpha}}\\
+			&= 3R \lim_{\alpha \to \infty} e^{-\alpha}\\
+			\therefore C_{v} &= 0
+		\end{align*}
+	\end{enumerate}
+\end{document} 

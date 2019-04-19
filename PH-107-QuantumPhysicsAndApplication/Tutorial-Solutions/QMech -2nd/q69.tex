@@ -1,0 +1,19 @@
+\documentclass{article}
+\begin{document}
+\title{QM Tutorial Sheet 3 Q.69}
+\author{Raghav Gupta}
+\maketitle
+A beam of particles with energy E approaches from left hand side, a potential barrier defined by \(V=0\)
+for \(x<0\) and \(V=V_0\) for \(x>0\), where \(V_0>E.\)\\\\
+(a) Find the value of \(x=x_0\) \((x_0>0)\), for which the probability density is \(\frac{1}{e}\) times the probability
+density at x=0.\\\\
+(b) Take maximum allowed uncertainty \(\Delta x\) for the particle to be localized in the classically forbidden
+region as \(x_0\). Find the uncertainty this would cause in the energy of the particle. Can then one be
+sure that its energy E is less than V_0?\\\\
+
+Take the TISE\\\\\(-\frac{\hbar^2}{2m}\frac{d^2\Psi}{dx^2} = (E-V)\Psi\)\\\\For left region \((x<0)\), V=0, hence \(-\frac{\hbar^2}{2m}\frac{d^2\Psi}{dx^2} = E\Psi \Rightarrow \Psi _1(x) = Asin(k_1x) + Bcos(k_1x)\) where \(k_1 = \sqrt{\frac{2mE}{\hbar^2}}\)\\\\
+For right region \((x\geq0)\), \(V=V_0\), hence \(-\frac{\hbar^2}{2m}\frac{d^2\Psi}{dx^2} = (E-V_0)\Psi \Rightarrow \Psi _2(x)= Ce^{-k_2x} + De^{k_2x}\) where \(k_2 = \sqrt{\frac{2m(V_0 - E)}{\hbar}}\)\\\\
+Since the wavefunction must vanish at \(x\rightarrow \infty, D=0.\)\\\\
+Equating \(\Psi_1(0) = \Psi_2(0)\) and \(\Psi_1'(0) = \Psi_2'(0)\), we get\\\\\(B=C\) and \(Ak_1 = -Ck_2\)\\\\
+Now for part a), we need an \(x_0\) such that \(|\Psi_2(x_0)|^2 = \frac{1}{e}\times |\Psi_2(0)|^2 \Rightarrow x_0=\frac{1}{2k_2}\)\\\\Thus \(x_0 = \frac{\hbar}{\sqrt{8m(V_0-E)}}\)\\\\Now for part b), take \(\Delta x = x_0\). Then, by Heisenberg uncertainty principle, \(\Delta p = \frac{\hbar}{2x_0} = \sqrt{2m(V_0-E)}\)\\\\Again, taking \(<p> = 0\) in the classically forbidden region (\(x=0\)), we get uncertainty in energy \(= \Delta E = <E> = \frac{<p^2>}{2m} = \frac{(\Delta p)^2}{2m} = V_0 - E.\)\\\\Now since the particle energy initially is \(E\), the energy in the forbidden region may be as much as \(E + \Delta E = V_0\).\\\\This may arise from the particle absorbing some extra amount of energy from its surroundings, enough for it to enter the right region (\(V=V_0\)), but the Heisenberg uncertainty principle (\(\Delta E \Delta t \geq \frac{\hbar}{2}\)) implies that the particle may remain in this classically forbidden region for only a finite amount of time and would have to return back to the left region eventually. So, even though there is a finite non-zero probability of the particle existing in the right region, the reflection coefficient at \(x=0\) would still be obtained as unity.
+\end{document}

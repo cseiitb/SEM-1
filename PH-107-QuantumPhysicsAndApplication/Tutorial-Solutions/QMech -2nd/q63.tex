@@ -1,0 +1,26 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=60pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+	\title{PH-105 Assignment Sheet - 3 (Quantum Mechanics - 2)}
+	\date{}
+	\author{Umang Mathur}
+	\maketitle
+	\begin{enumerate}
+		\item[63.] {\bf A particle in a one-dimensional well ( $V=0$ for $0<x<L$, $V=\infty$ elsewhere) has the wave function $\phi(x) = Ax(L-x)$ inside the box and $\phi(x) = 0$ elsewhere at t=0. Calculate the expectation value of energy. On making an energy measurement, what is the probability of finding the particle in the ground state ? }\\\\
+		{\underline {\bf Solution}} :\\
+		The expectation value of energy can be calculated as:
+		\[\langle E\rangle = \langle \phi^*(x) | \hat{H}| \phi(x) \rangle = \int_0^L \phi^*(x)\Big(-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\big(Ax(L-x)\big)\Big) dx = \frac{A^2\hbar^2L^3}{6m}\]
+		Also, normalizing $\phi(x)$, we have,
+		\[ \langle \phi^*(x) | \phi(x) \rangle = \int_0^L A^2x^2\big(L-x\big)^2 dx = 1 \text{, which gives } A = \sqrt{\frac{30}{L^5}}\]
+		Thus, $\mathbf{\langle E\rangle = \frac{5\hbar^2}{mL^2}}$.\\
+		For a particle in an infinite well, the eigenvalues of energy operator are given by $\psi_n(x) = \sqrt{\frac{2}{L}}\sin(\frac{n\pi x}{L})$.\\
+		Hence, the probability of finding a particle in ground state is given by
+		\[\big(\langle \psi_1(x) | \phi(x) \rangle\big)^2 = \Big(\int_0^L \sqrt{\frac{2}{L}}\sin(\frac{\pi x}{L})\big(Ax(L-x)\big) \Big)^2\]
+		Noting that $A = \sqrt{\frac{30}{L^5}}$, $\int z\sin(az) dz = -\frac{z\cos(az)}{a} + \frac{\sin(az)}{a^2}$, and that $\int z^2\sin(az) dz = \frac{2z\sin(az)}{a^2} - \frac{(2 +  a^2z^2)\cos(az)}{a^3}$, we have
+		\[ \textbf{P(ground state)} = \big(\langle \psi_1(x) | \phi(x) \rangle\big)^2 = \Big(\sqrt{60}\frac{4}{\pi^3}\Big)^2 = \frac{960}{\pi^6} = 0.9985\]
+	\end{enumerate}
+\end{document} 

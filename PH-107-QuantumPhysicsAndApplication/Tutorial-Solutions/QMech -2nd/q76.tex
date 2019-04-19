@@ -1,0 +1,19 @@
+\documentclass{article}
+\begin{document}
+\title{QM Tutorial Sheet 3 Q.76}
+\author{Raghav Gupta}
+\maketitle
+
+\textbf{A particle of mass \(m\) is confined to a one-dimensional box described by \(V=0\) for \(0<x<L\) and for
+\(2L<x<3L, V=Vo\) for \(L<x<2L\) and \(V=\infty\) , everywhere else.\\\\It is given that the ground state wave
+function of the particle is independent of
+x between \(L<x<2L\)\\\\
+(a) Find L in terms \(Vo\) and m\\
+(b) Find the percentage probabilities of
+finding the particle in three different
+regions of different potentials.\\
+(c) Sketch the wave function
+everywhere in box.}\\\\
+
+Take the TISE\\\(-\frac{\hbar^2}{2m}\frac{d^2\Psi}{dx^2} = (E-V)\Psi\) and let the energy of the particle be \(E\). Now, in region 2, let \(\Psi_2(x) = C\) where \(C\) is some constant not dependent on \(x\). Plugging \(\Psi_2\) in the TISE, the left hand side becomes zero, hence \(E=V_0\) since \(\Psi_2 = 0\) is not acceptable.\\\\For region 1, solving the TISE gives\\ \(\Psi_1 = Asin(kx) + Bcos(kx)\)\\\(\Psi_2 = C\)\\and \(\Psi_3 = Dsin(kx) + Ecos(kx)\)\\Evidently, the wave function would be zero for \(x<0\) and \(x > 3L\).\\\\Applying continuity at the boundaries of each region,\\\(\Psi_1(0)=0 \Rightarrow B=0\)\\\(\Psi_1(L)=\Psi_2(L) \Rightarrow Asin(kL)=C\)\\\(\Psi_2(2L) = \Psi_3(2L) \Rightarrow C = Dsin(2kL) + Ecos(2kL)\)\\\(\Psi_3(3L)=0 \Rightarrow Dsin(3kl) + Ecos(3kL) = 0\)\\Here \(k = \sqrt{\frac{2mV_0}{\hbar^2}}\)\\\\As a simplification, we may assume that the wave function in region 3 is a mirror image of the wave function in region 1.\\\\Applying differentiability of wave function at \(x=L\), \(\Psi_1'(L) = \Psi_2'(L) = Akcos(kL)=0 \Rightarrow kL = \frac{(2n+1)\pi}{2} \Rightarrow L = \frac{(2n+1)\hbar\pi}{\sqrt{8mV_0}}\).\\\\Now, for ground state, assume that the probability of the particle being in region 1 and in region 3 are equal (symmetry arguments). Also assume that \(n\) in the above equation is 0 i.e. its lowest possible value \(\Rightarrow A = C\) in ground state. Now, normalizing the wave function, we get \(A = \sqrt{\frac{1}{2L}}\)\\\\Thus, P\{particle exists in region 1\} =\(\int_0^L A^2sin^2(kx)\,\mathrm{d}x = 0.25\)\\P\{particle exists in region 2\} = 0.5\\P\{particle exists in region 3\} = 0.25 by assumed symmetry\\
+\end{document}

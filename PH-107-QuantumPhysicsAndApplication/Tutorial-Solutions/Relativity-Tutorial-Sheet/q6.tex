@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\title{Solution to Relativity tutorial Q.6}
+\author{Raghav Gupta}
+\maketitle
+%\begin{enumerate}
+{6.}
+Given that a rod of length 3m proper in frame S is angled at $60^\circ{}$ to the $x$-axis. A bullet with speed $u= 0.8c$  is launched at it from the lower end of the rod (which we assume as the origin of S), parallel to the rod. 
+Another frame S' travels at 0.6c relative to S along the $x$-axis.\\
+
+\noindent
+For bullet, $u_x$= x-component of its velocity in S frame=$u\cos(60^\circ{}) = 0.4c$\\
+$u_y$ = y-component of its velocity in S frame= $u\sin60^\circ{} = 0.4\sqrt{3}c$\\
+
+\noindent
+Let $E$  be the event of the bullet reaching the end of the rod in S frame.\\
+If  $(x, y, t)$  and $(x', y', t')$ are its coordinates in the frames S and S' respectively, then\\
+$x= 3\cos60^\circ{} = 1.5m, y=  3\sin60^\circ{} = 1.5\sqrt{3} m,$
+\\
+Speed of S' w.r.t. s = $v= 0.6c$  in the positive $x$ direction, so \\
+$ \gamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} = 1.25$\\
+$ \beta= \frac{v}{c}= 0.6$\\
+
+\noindent
+\textbf{a)}  In S, the time taken by the bullet to reach the stopper will simply be $\frac{3}{0.8c} = 1.25\times10^{-8}$ seconds  since the bullet travels along the rod.\\
+The time coordinates of this event  in S'  =$ t' = \gamma(t - \frac{vx}{c^2}) = 1.19\times10^{-8}$  seconds.\\
+\\
+
+\textbf{b)} By velocity transformation across frames S and S' $(v= 0.6c, u_x= 0.4c, u_y= 0.4\sqrt{3}c)$, we have\\
+
+
+\noindent
+$x'$  component of bullet's velocity = $u'_x = \frac{u_x-v}{1-\frac{u_xv}{c^2}}\) = -0.26c$\\  
+(i.e. $0.26c$ ~ along ~ $-x'$  direction)$\\
+$y'$ component of bullet's velocity = $u'_y = \frac{u_y}{\gamma(1-\frac{u_xv}{c^2})} = 0.73c $\\
+
+
+\noindent
+\textbf{c)} To check if the bullet reaches the stopper or not, we first calculate the space coordinates of event E (bullet hitting the stopper in S) in S' by Lorentz transformation.\\
+$x' = \gamma(x-vt) = -0.94$ metres  ,\\ 
+ $y' = y = 1.5\sqrt{3}\) metres\\
+Now if the bullet does hit the stopper in S', it must be at $((x',y')$ after time $t'$.\\
+So,$(u'_yt'= 0.73c\times1.19\times10^{-8} = 2.61m = y'$\\
+and $u'_xt'= -0.26c\times1.19\times10^{-8} = -0.94m = x'$\\
+This confirms that the bullet is indeed at the stopper's location at the moment they are supposed to collide. Hence, \textbf{the bullet does hit the stopper.}
+\end{document}
+
+

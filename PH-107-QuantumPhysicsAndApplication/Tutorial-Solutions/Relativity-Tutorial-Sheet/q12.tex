@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\title{Solution to Relativity tutorial Q.12}
+\author{Raghav Gupta}
+\maketitle
+
+\textbf{Q.12}\\\\
+Define events \(E_1\) through \(E_3\) as follows 
+\\\\
+\(E_1\) - Spaceships A, B and C coincide (i.e. the origins of the frames of A, B and C coincide)\\ 
+\(E_2\) - Spaceship B fires at C\\
+\(E_3\) - Spaceship C fires at B\\\\
+Speed of B w.r.t. A = \(0.6c\) in the positive-\(x\) direction, so \displaymath \gamma_{AB} = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} = 1.25 \verb| , | \(\beta_{AB}= \frac{v}{c}= 0.6\)\newline
+
+Speed of C w.r.t. A = \(0.75c\) in the positive-\(y\) direction, so \displaymath \gamma_{AC} = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} = 1.51  \verb| , | \(\beta_{AC}= \frac{v}{c}= 0.75\)
+
+The event table is as follows. Note that \(x\), \(y\) and \(t\) are the space-time coordinates for the frame of A, \(x'\), \(y'\) and \(t'\) are the coordinates in the frame of B and \(x''\), \(y''\) and \(z''\) correspond to the frame of C.\\
+
+	\centering
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline
+		& \(x (m)\) & \(y (m)\) & \(t (s)\) & \(x' (m)\)  & \(t' (s)\) & \(y'' (m)\) & \(t'' (s)\)\\\hline
+		\(E_1\) & \(x_1=0\) & \(y_1=0\) & \(t_1=0\) & \(x'_1=0\) & \(t'_1=0\) & \(y''_1=0\) & \(t''_1=0\)\\
+		\(E_2\) & \(x_2=3.6\times10^5\) & \(y_2=0\) & \(t_2= 2\times 10{-3}\) & \(x'_2\) & \(t'_2\) & \(y''_2\) & \(t''_2\)\\
+		\(E_3\) & \(x_3=0\) & \(y_3=4.5\times10^5\) & \(t_3= 2\times 10{-3}\) & \(x'_3\) & \(t'_3\) & \(y''_3\) & \(t''_3\)\\\hline			
+		\end{tabular}
+	\caption{Table of Events}
+	\label{tab:TableOfEvents}
+\end{table}
+
+Note that \(t_2= \frac{x_2}{v_{AB}} = 2\times10^{-3}\) seconds = \(\frac{y_3}{v_{AC}} = t_3\)
+\\\\
+a) The spaceship C travels at \(u_y = 0.75c\) in the \(+y\) direction and \(u_x = 0\). So, by the velocity transformation between frames A and B,\\
+\textbf{Speed of C in B's frame = } \displaymath \(u'_y\) = \frac{u_y}{\gamma_{AB}(1-\frac{v_{AB}u_x}{c^2})} = \(0.6c\).
+\newline
+\\
+
+b) By Lorentz transformation, we calculate\\\\
+\(t'_2 = \gamma_{AB}(t_2 - \frac{v_{AB}x_2}{c^2}) = 1.6\times10^{-3}\) seconds\\
+\(t'_3 = \gamma_{AB}(t_3 - \frac{v_{AB}x_3}{c^2}) = 2.5\times10^{-3}\) seconds\\
+\(t''_2 = \gamma_{AC}(t_2 - \frac{v_{AC}y_2}{c^2}) = 3.02\times10^{-3}\) seconds\\
+\(t''_3 = \gamma_{AC}(t_3 - \frac{v_{AC}y_3}{c^2}) = 1.32\times10^{-3}\) seconds\\
+\\
+So the time interval between spaceships B and C firing bullets in\newline
+\textbf{B's frame= \(t'_3 - t'_2 = 9\times10^{-4}\) seconds (B fires before C)}\\
+\textbf{C's frame= \(t''_2 - t''_3 = 1.7\times10^{-3}\) seconds (C fires before B)}\\
+\\\\
+c) Using the coordinates of \(E_2\) and \(E_3\) in the frame of spaceship A,\textbf{ the proper time interval between \(E_2\) and \(E_3\) can be calculated as}
+\displaymath \Delta\tau= \sqrt{(\Delta t)^2 - \frac{(\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2}{c^2}} = 1.92i\times10^{-3} seconds
+\newline
+\\\\
+
+
+\end{document}
+
+

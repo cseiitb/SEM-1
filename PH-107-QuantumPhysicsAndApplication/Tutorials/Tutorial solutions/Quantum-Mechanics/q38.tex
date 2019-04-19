@@ -1,0 +1,38 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=60pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+	\title{PH-105 Assignment Sheet - 2 (Quantum Mechanics)}
+	\date{}
+	\author{Umang Mathur}
+	\maketitle
+	\begin{enumerate}
+		\item[38.] {\bf A wave packet is constructed by superposing waves, their wavelengths varying continuously in the following way:\\
+				\[ y(x,t) = \int A(k)\cos{(kx-\omega t)} \,dk \] \\
+			Where A(k) = A for $(k_{o} - \Delta k/2) \leq k_{o} \leq k_{o} + \Delta k/2)$ and = 0 otherwise.\\
+			Sketch approximately y(x,t) and estimate $\Delta x$ by taking the difference between two values of $x$ for which the central maximum and nearest minimum is observed in the envelope. Verify uncertainty principle from this. }\\\\
+		{\underline {\bf Solution}} :\\
+		
+		Integrating between $k = k_{o} - \Delta k/2$ and $k = k_{o} + \Delta k/2$, we have,\\
+		 		\[ y(x,t) = \left. \frac{A}{x} \sin{(kx-\omega t)} \right|_{k_{o} - \Delta k/2}^{k_{o} + \Delta k/2} = \frac{2A}{x} \sin{(\frac{\Delta k}{2}x)}\cos{(k_{o}x - \omega t)} \]\\
+		 		
+		The function can be plotted as follows:
+		
+		\includegraphics{graph.png}
+		
+		The envelope curve is given by:-
+				\[ \xi(x) = \frac{2A}{x}\sin{(\frac{\Delta k}{2}x)} \] \\
+		Central maxima occurs at $x = 0$. For neares minimum, we differentiate $\xi(x)$ to find the extremum:
+				\[ \frac{\partial \xi(x)}{\partial x} = 0\]
+				\[ 2A(\frac{x\frac{\Delta k}{2}\cos{(\frac{\Delta k}{2}x)} - \sin{(\frac{\Delta k}{2}x)}}{x^{2}}) = 0 \]
+				\[ x\frac{\Delta k}{2} = \tan{(x\frac{\Delta k}{2})} \]
+		Let $x_{o}$ be the solution of the above equation. Then $\Delta x = x_{o} - 0 = x_{o}$. The solution of the equation can be found using analytical methods. The value of $x_{o}$ thus is $\frac{8.98682}{\Delta k}$.\\
+		Now, $\Delta p = \hbar \Delta k$.\\
+		Thus, the product $ \Delta x \Delta p = 8.986 \hbar > \hbar / 2$.\\
+		This verifies the uncertainty principle.
+				
+	\end{enumerate}
+\end{document} 

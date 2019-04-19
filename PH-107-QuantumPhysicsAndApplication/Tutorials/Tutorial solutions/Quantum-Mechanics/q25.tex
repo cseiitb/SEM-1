@@ -1,0 +1,41 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=80pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\title{PH-105 Assignment Sheet - 1}
+\author{Ashwin P. Paranjape}
+\date{}
+\maketitle
+\begin{enumerate}
+\item[25.]{A containder contains a monoatomic hydrogen gas in thermal equilibrium at a temperature T for which $k_BT= 0.025$ eV. Let $E_1$ be the difference between the ground state and the first excited state energy of the atom when at rest. Let $E_2$ be the energy of photon (in frame of container) required to make this transition in an atom, which is travelling towards the photon (in an antiparallel direction) with the average energy at the above specified temperature.\\
+(i) Find $E_1 - E_2$\\
+(ii) After the absorption of photon what would be the final velocity of the hydrogen atom\\
+(iii) If the lifetime of the first exited state is $10^{-8}$, will the photon with energy $E_2$ be able to cause a transition, had the atom been at rest. Discuss quantitatively.} \\
+{\underline Solution} : \\
+Using Relativistic Doppler effect, we have
+\[\nu'=\nu\sqrt{\frac{1+v/c}{1-v/c}}\]
+This formula can he used to calculate frequency of photon in rest frame of Hydrogen atom. As v~2000m/s<<c, hence
+\[\nu'=\nu(1+v/c)\]
+Now, in rest frame of Hydrogen (S')
+\[p'_p = h\nu'/c\]
+\[p_{H(after collision)}= p'_p= h\nu'/c\]
+\[E_{H(after collision)}= h^2\nu'^2 + m_H^2c^4\]
+Here $h^2\nu'^2 << m_H^2c^4$, hence we can assume that almost all energy of incoming photon is used for electron transition.
+Thus,
+\[E_p=h\nu'=E_1\]
+\[E_2(1+v/c)=E_1\]
+\[v_{rms}=\sqrt{\frac{3K_BT}{M}}=2.73*10^3 m/s\]
+\[E_1-E_2\approx E_1v/c=10.2*9.1*10^{-4} eV = 9.28*10^-3\]
+In the frame of Hydrogen atom, its recoil speed (non-relativistic) is given by
+\[h\nu'/c=m_Hv_H\]
+\[v_H=\frac{10.2eV *c}{m_H c^2}\approx (10.2eV /1GeV)*c = 3.06 m/s\]
+
+By uncertainity principle, the uncertainity in energy of photon which causes the transition is given by,
+\[\delta_E \delta_t \leq 4.13 * 10 ^ -15\]
+\[\delta_E \leq 4.13 * 10 ^ -7 \]
+Thus only photons of energy $10.2 \pm 4.13 * 10 ^ -7$ can excite the electron.
+Hence the electron with energy $E_2$, will not be able to excite the electron had the atom been at rest.
+\end{enumerate}
+\end{document}

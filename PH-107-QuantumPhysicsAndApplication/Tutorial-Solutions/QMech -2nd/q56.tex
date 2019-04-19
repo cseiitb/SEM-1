@@ -1,0 +1,29 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=80pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\title{PH-105 Assignment Sheet - 3}
+\author{Ashwin P. Paranjape}
+\date{}
+\maketitle
+\begin{enumerate}
+\item[56.]{For a particle in one-dimensional box of side L, show that the probability of finding the particle between $x=B$ and $x=B+b$ approaches the classical value $b/L$, if the energy of the particle is very high.
+} \\
+{\underline Solution} : \\
+Wavefunction for particle in a box is given by
+
+\[\phi_n(x) = \sqrt{\frac{2}{L}}sin\frac{n\pi x}{L} \text{ for } 0 < x < L\]
+\[\text{\hspace{0.8cm}}=0 \text{ elsewhere }\]
+Now probablity of finding the particle between $B$ and $B+b$ is given by
+\[P = \int_B^{B+b}{\frac{2}{L}sin^2(\frac{n\pi x}{L})}\mathrm{d} x\]
+\[P = \frac{2}{L}\int_B^{B+b}\frac{1-cos(\frac{2n\pi x}{L})}{2}\mathrm{d} x\]
+\[P = \frac{1}{L}\big( b-\frac{L}{2n \pi}(sin(\frac{2n\pi (B+b)}{L})-sin(\frac{2n\pi (B)}{L}))}\big) \]
+\[P = \frac{1}{L}\big( b-\frac{L}{n \pi}cos(\frac{2n\pi (2B+b)}{L})sin(\frac{2n\pi b}{L})) \]
+
+\[\lim_{n \to \infty} P = \frac {b}{L} \]
+
+
+\end{enumerate}
+\end{document}

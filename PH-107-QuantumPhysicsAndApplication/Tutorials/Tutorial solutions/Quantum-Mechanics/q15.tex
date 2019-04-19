@@ -1,0 +1,55 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=80pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\title{PH-105 Assignment Sheet - 1}
+\author{Ashwin P. Paranjape}
+\date{}
+\maketitle
+\begin{enumerate}
+\item[15.]{Show that if the nuecleus in the Bohr atom is assumed to be of finite mass, the angular momentum of the system, the allowed radii and energies are all given by identical expressions except for replacement of m by the reduced mass $\mu$} \\
+{\underline {\bf Solution}} : \\
+\includegraphics[width=4in]{FiniteMassAtom.png}
+\\
+By Quantization of angular momentum, we have
+\[M_N v_1 r_1 + M_e v_2 r_2 = \frac{n h }{2 \pi}\]
+Also, as the total momentum along y direction is 0. Thus
+\[M_N v_1 = M_e v_2\]
+Conbining above two, we have
+\[M_N v_1 R = \frac{nh}{2\pi}\]
+Now consider the force balance on Nucleus in CM frame,
+\[\frac{M_N (v_1)^2 }{r_1}=\frac{KZe^2}{R^2}\]
+Using the above two equations
+\[\frac{n^2 h^2 }{4\pi^2 M_N r_1}={KZe^2}\]
+now to express $r_1$ in terms of $R,M_N,M_e$, we use CM equation,
+\[r_1 M_N = \frac{RM_eM_N}{M_e + M_N}\]
+\[r_1 M_N = \frac{R}{\frac{1}{M_N}+\frac{1}{M_e}}\]
+Now, by definition of reduced mass,
+\[\frac{1}{\mu}=\frac{1}{M_N}+\frac{1}{M_e}\]
+Thus
+\[r_1 M_N = R\mu\]
+Hence
+\[\frac{n^2 h^2 }{4\pi^2 \mu R}={KZe^2}\]
+\[\frac{n^2 h^2 }{4\pi^2 \mu  KZe^2}={R}\]
+
+Calculation for total energy,
+\[T.E. = 1/2 M_N V_1^2 + 1/2 M_e v_2^2 - KZe^2/R\]
+Using,
+\[M_N^2 v_1^2 R^2 = \frac{nh}{2\pi}^2 = M_e^2 v_1^2 R^2\]
+\[T.E. = \frac{n^2h^2}{8\pi R^2}X(\frac{1}{M_N}+\frac{1}{M_e}) - \frac{n^2 h^2 }{4\pi^2 \mu R^2}\]
+\[\frac{n^2 h^2 }{4\pi^2 \mu R}={KZe^2}\]
+\[T.E. = \frac{n^2h^2}{8 \pi^2 \mu R^2}\]
+Putting value of R
+\[T.E. = \frac{2 K^2 Z^2 e^4 \pi^2}{n^2 h^2}\]
+
+Now for Angular Momentum,
+\[\mu V_{rel} R = \frac{M_N M_e (v_1 + v_2)R}{M_N+M_e}\]
+As,
+\[M_N v_1 = M_e v_2 \implies \frac{M_N+M_e}{v_1+v_2}=\frac{M_e}{v_1}\]
+Thus,
+\[\mu V_{rel} R = M_N v_1 R = M_N V_1 r_1 + M_e V_2 r_2\]
+Hence proved.
+\end{enumerate}
+\end{document}

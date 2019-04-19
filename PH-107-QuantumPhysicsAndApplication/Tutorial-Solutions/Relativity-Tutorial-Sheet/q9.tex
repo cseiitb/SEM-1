@@ -1,0 +1,50 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=80pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\title{PH-105 Assignment Sheet - 1}
+\author{Ashwin P. Paranjape}
+\date{}
+\maketitle
+\begin{enumerate}
+\item[9.]{An observer O sees another observer A pass by him with a velocity $v_1$. At this instant, the watches of O and  A read zero. After time $t_1$, O sees another observer passing by him with velocity $v_2$. Sometime later, B catches A. At this instant watch of O reads 245 $\mu$s and watch of A reads 173 $\mu$s. According to B, the time difference between passing of O and catching of A is 100 $\mu$s. Assume that the observers O, A and B are at the origins of their respective frames, calculate $v_1$, $v_2$ and $t_1$. Also calculate the relative velocity of B and A and the time in A's frame when B passes O.}\\
+{\underline {\bf Solution}} : \\
+Let us denote the 3 events (of the three persons passing each other) by subscripts OA,OB,AB. Also let the three quantities in each frame be denoted by superscripts O,A,B. Lets denote $\gamma$s of $v_1$ and $v_2$ by $\gamma_1$ and $\gamma_2$
+
+Now we know $t_{OA}^{O}=t_{OA}^{A}=x_{OA}^{O}=x_{OA}^{A}$, which means lorentz tranform is applicablt to space-time coordinates of any event happening in these two frames. There is no need for taking difference in coordinates.\\
+ Also $t_{AB}^{A}=173\mu s$, $x_{AB}^{A}=0$ and $t_{AB}^{O} = 245 \mu s$. 
+
+Now by lorentz transformation between frames O and A on event AB, we have
+\[t_{AB}^{O} = \gamma_1 (t_{AB}^{A} + \frac{vx_{AB}^{A}}{c^2})\]
+\[245 \mu s = \gamma_1 173\mu s\]
+\[\gamma_1 = 245/173 \]
+\[ \gamma_1 = 1.416184971 \]
+Thus, $v_1 = 0.7080 c$.
+
+Now $\Delta t_{OB-AB}^O = t_1$. In frame O, event AB occurs. Distances travelled by both A and B is the same in O's frame.
+\[(245 \mu s -t_1)v_2 = 245 \mu s v_1\]
+\[(245 \mu s -t_1) v_2 = 173.481c \mu s\]
+
+Also now consider space-time interval between OB and AB in frames O and B.
+By lorentz transformation we have
+\[\Delta t^O=\gamma_2(\Delta t^B - \frac{v_2 \Delta x^B }{c^2}) \]
+\[(245 \mu s - t_1) = \gamma_2100 \mu s) \]
+\[173.481c/v_2 = \gamma_2 100\]
+\[\gamma_2 v_2 = 1.73481 c \]
+\[v_2 ^2 (1+1.72481^2) = 1.72481^2c^2\]                                                          
+\[v_2 = 0.8651c \]
+
+Thus we have $t_1=44.47 \mu s$
+\[v_{AB}=\frac{v_A-v_B}{1-(v_A v_B)/c^2}\]
+\[v_{AB}=\frac{0.1571c}{0.39388}\]
+\[v_{AB}=0.4445\]
+
+Consider the space-time interval between events OA and OB in frames O and A.
+By Lorentz transformation,
+\[\Delta t^A=\gamma_1(\Delta t^O-v\Delta x^O/c^2)\]
+\[\Delta t^A= 1.4161(44.47)\mu s\]
+\[\Delta t^A= 62.97 \mu s\]
+\end{enumerate}
+\end{document}

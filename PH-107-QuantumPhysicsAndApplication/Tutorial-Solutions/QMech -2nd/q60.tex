@@ -1,0 +1,47 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=60pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+	\title{PH-105 Assignment Sheet - 3 (Quantum Mechanics - 2)}
+	\date{}
+	\author{Umang Mathur}
+	\maketitle
+	\begin{enumerate}
+		\item[60.] {\bf The wave function of a particle in a one-dimensional box of length L and potential zero at time $t = 0$ is given as follows:}
+			\[\psi(x,0) = A\sin(\frac{\pi x}{L}) + 2A\sin(\frac{3\pi x}{L}) + \sqrt{11}A\sin(\frac{5\pi x}{L})\]
+			\begin{enumerate}[(a)]
+				\item {\bf Find the wave function $\psi(x,t)$, at a later time t.}
+				\item {\bf If the measurements of energies are carried out, what are the values that will be found and whatare the corresponding probabilities ?}
+				\item {\bf If there are a large number of identical systems, each one of them represented by wave functions as above, what would be the average energy found if measurements are done in all of them at the same time ?}
+				\item {\bf If the measurement yielded the lowest value of energy, what would be the wave function later and what values of energy would be found later ?}
+			\end{enumerate}
+			
+		{\underline {\bf Solution}} :\\
+		
+		\begin{enumerate}[(a)]
+			\item The time evolution of $\psi$ is given by:
+			\[|\psi(x,t) \rangle = e^{\frac{-i\hat{H}t}{\hbar}}|\psi(x,0) \rangle = A\sin(\frac{\pi x}{L})e^{\frac{-i\pi ht}{4mL^2}} + 2A\sin(\frac{3\pi x}{L})e^{\frac{-9i\pi ht}{4mL^2}} + \sqrt{11}A\sin(\frac{5\pi x}{L})e^{\frac{-25i\pi ht}{4mL^2}} \]
+			Normalizing $\psi(x,t)$, we have $A = \sqrt{\frac{1}{8L}}$. Thus,
+			\[\psi(x,t) = \sqrt{\frac{1}{8L}}\sin(\frac{\pi x}{L})e^{\frac{-i\pi ht}{4mL^2}} + \sqrt{\frac{1}{2L}}\sin(\frac{3\pi x}{L})e^{\frac{-9i\pi ht}{4mL^2}} + \sqrt{\frac{11}{8L}}\sin(\frac{5\pi x}{L})e^{\frac{-25i\pi ht}{4mL^2}} \]
+			
+			\item If the measurement on energies are going to be carried out, the outcome will be one of the energies of the eigenfunctions $\psi_1$, $\psi_3$ or $\psi_5$, namely, $E_1$, $E_3$, or $E_5$, where $E_n = \frac{n^2h^2}{8mL^2}$. The probabilitites are given by:
+			\[ P(E_{measured} = \frac{n^2h^2}{8mL^2}) = \Big(\langle \psi_n(x) | \psi(x) \rangle\Big)^2 \]
+			Because, $\hat{H}$ is a hermitian operator, the $\psi_n$s are orthonormal, and thus, $\langle \psi_i | \psi_j \rangle = \delta_{ij}$. Using this, we have,
+			\begin{align*}
+				P( E_{measured} = \frac{h^2}{8mL^2} ) &= \frac{1}{16}\\
+				P( E_{measured} = \frac{9h^2}{8mL^2} ) &= \frac{1}{4}\\
+				P( E_{measured} = \frac{25h^2}{8mL^2} ) &= \frac{11}{16}
+			\end{align*}
+			
+			\item Note that $\psi = \frac{1}{4}\psi_1 + \frac{1}{2}\psi_3 + \frac{\sqrt{11}}{4}\psi_5$. The average energy is given by the expectation value of the hamiltonian operator. Thus,
+			\[ \langle E \rangle = \langle \psi^* | \hat{H} | \psi \rangle = \Big(\frac{1}{4}\Big)^2E_1 + \Big(\frac{1}{2}\Big)^2E_3 + \Big(\frac{\sqrt{11}}{4}\Big)^2E_5 = \frac{39}{16}\frac{h^2}{mL^2} \]
+			
+			\item If a measurement yields the value $E_1$, then the wavefunction will collapse to $\psi_1$. Thus the wavefunction at a time $t$ after the measurement will be given by
+			\[ \psi = \sqrt{\frac{2}{L}}\sin\Big(\frac{\pi x}{L}\Big)e^{\frac{-i\pi ht}{4mL^2}} \]
+			
+		\end{enumerate}
+	\end{enumerate}
+\end{document} 

@@ -1,0 +1,26 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[top=80pt, bottom=50pt, left=55pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\title{PH-105 QM Sheet 2}
+\date{11.10.2012}
+\author{Vipul Singh}
+\maketitle
+\begin{enumerate}
+\item[49.]{\bf Show that the expectation value of momentum for any well-behaved function is always real.}\\
+
+{\underline {\bf Solution}} : \\
+The quantum mechanical operator for momentum is given by $p_{x}=-i\hbar\frac{\partial}{\partial x}$.\\
+Hence, the expected value of momentum for a wave-function $\psi$ is given by\\
+\begin{center}
+$\langle p_{x}\rangle = -i\hbar \int_{-\infty}^{+\infty} \psi^{*} \frac{\partial\psi}{\partial x} dx$  
+\end{center}
+Using integration by parts with the partial derivative as second function, we get
+\begin{center}
+$\langle p_{x}\rangle = -i\hbar [\psi^{*}\psi]_{-\infty}^{+\infty} + i\hbar \int_{-\infty}^{+\infty} \psi \frac{\partial\psi^{*}}{\partial x} dx$
+\end{center}
+Since $\psi$ is well-behaved, it vanishes as $|x|\rightarrow\infty$ and hence the first term above is zero. The second term remains and it is equal to the complex conjugate of $\langle p_{x}\rangle$. So, we see that $\langle p_{x}\rangle = \langle p_{x}\rangle ^{*}$. Hence we conclude that the expected value of momentum must be real.
+\end{enumerate}
+\end{document}

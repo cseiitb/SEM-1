@@ -1,0 +1,50 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=80pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\title{PH-105 Assignment Sheet - 1}
+\date{11.08.2012}
+\author{Vipul Singh}
+\maketitle
+\begin{enumerate}
+\item[5.]{\bf An observer is sitting in a train (call it frame S' and assume that the observer is sitting at the origin). The train moves with a constant speed of 0.6c relative to ground (assume ground to be the inertial frame S). Another observer is sitting at the origin of S. The two observers set the watches to zero time at the instance they cross each other. At time $t'=2\times10^{-6}$s, the observer in the train finds himself passing a building "A" on the ground. Also in the train frame at time $t'=2\times10^{-6}$s, lighning strikes the ground at a place where the origin of S is situated. Find the distance of train from origin when lightning struck, according to the observer on ground. Also find the distance of the building "A" from origin in S and the time the train would reach building "A", in S frame?}\\
+
+{\underline {\bf Solution}} : \\
+Relative speed, v=0.6c. Hence $\gamma$=1.25. \\
+The following events can be identified in the above problem :
+	
+{\bf E1 :} Train passing the building A.\\
+{\bf E2 :} Striking of the lightning.
+	
+Let ($x_{1}$, $t_{1}$) and ($x_{2}$, $t_{2}$) be the coordinates of the two events in A's frame.\\
+Similarly, let ($x_{1}'$, $t_{1}'$) and ($x_{2}'$, $t_{2}'$) be the corresponding coordinates in B's frame.\\
+\\
+Known values are : \\	
+$t_{1}' = t_{2}' = t'=2\times10^{-6}$s \hfill (from the given data) \\
+$x_{1}' = 0$ \hfill (building is at train's origin when E1 occurs) \\
+$x_{2} = 0$ \hfill (lightning struck the origin of S frame) \\
+\\
+When {\bf E2} occurs, the separation between the origins of two frames as seen by the train observer will be : 
+\begin{center}
+$x_{2}' = -vt_{2}' = -0.6c\times2\times10^{-6}s = -360m$
+\end{center}
+From inverse Lorentz transformation, we get: 
+\begin{center}
+$t_{2}$ = $\gamma$ ($t_{2}'$ + $\frac{vx_{2}'}{c^{2}}$) = $1.6\times10^{-6}$s \\
+\end{center}
+Distance of train from origin when lightning struck, according to the observer on ground
+\begin{center}
+$= vt_{2} = 0.6c\times1.6\times10^{-6}s = 288m$
+\end{center}
+Since {\bf E1} occurs at the position of building, distance of building from origin in frame S equals
+\begin{center}
+$x_{1} = \gamma (x_{1}' + vt_{1}') = \gamma vt_{1}' = 1.25\times0.6c\times2\times10^{-6}s = 450m$
+\end{center}
+Time difference between the crossing of origins and {\bf E1} is proper in the train frame. Hence time taken by train to reach building in S frame
+\begin{center}= time difference between crossing of origins and {\bf E1} in S frame \\
+$ = \gamma t_{1}' = 2.5\times10^{-6}s$ 
+\end{center}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,34 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=60pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+	\title{PH-105 Assignment Sheet - 3 (Quantum Mechanics - 2)}
+	\date{}
+	\author{Umang Mathur}
+	\maketitle
+	\begin{enumerate}
+		\item[62.] {\bf Suppose we have $10,000$ rigid boxes of same length L, each box containing one particle of the same mass m. Let us assume that all particles are described by the same wave function. On performing the energy measurement on all the $10,000$ particles at the same time we find only two energy values, one corresponding to $n = 2$ and the other corresponding to $n = j$. If in $4,000$ measurements, one obtains value corresponding to $n = 2$ and if the average value of the energy found in all the measurements $\frac{7\hbar^2\pi^2}{2mL^2}$ is, find the value of j and the wave function of the particles.}
+			
+		{\underline {\bf Solution}} :
+		
+		Assuming that the data is large enough so that the statistics obtained depict the actual values of probabilities,
+		\[ P(n = 2) = \frac{4,000}{10,000} = 0.4\]
+		\[ \text{Hence, } P(n = j) = 1 - 0.4 = 0.6\]
+		Assuming that the wavefunction of each particle is given by:
+		\[ \psi(x,t) = c_2\sqrt{\frac{2}{L}}\sin\big(\frac{2\pi x}{L}\big)e^{\frac{-i\pi ht}{mL^2}} + c_j\sqrt{\frac{2}{L}}\sin\big(\frac{j\pi x}{L}\big)e^{\frac{-ij^2\pi ht}{4mL^2}} \]
+		Normalizing $\psi(x,t)$, we get
+		\[ \langle \psi^*(x,t) | \psi(x,t) \rangle = 1 .\text{Hence, } c_2^2 + c_j^2 = 1 \]
+		The coefiecients $c_2$ and $c_j$ can be found out by taking note of the fact that the probability that a particle is found in state $n = k$ is given by
+		\[ P(n = k) = \langle \psi_k(x,t) | \psi(x,t) \rangle = c_k^2, \text{if the normalized wavefunction of the particle is given by } \Sigma_i c_i\psi_i(x,t) \]
+		Thus, $c_2 = \sqrt{\frac{4}{10}}$ and $c_j = \sqrt{\frac{6}{10}}$
+		The average energy is given by (noting that $\langle \hat{H} | \psi_n(x,t) \rangle = E_n | \psi(x,t) \rangle$ :
+		\[ \langle E \rangle = \langle \psi^*(x,t) | \hat{H} | \psi(x,t) \rangle = c_2^2E_2 + c_j^2E_j = \frac{\hbar^2\pi^2}{2mL^2}\big(1.6 + 0.6j^2\big)\]
+		We, therefore, have, $1.6 + 0.6j^2 = 7$, which gives $\mathbf{j = 3}$\\\\
+		The wavefunction of the paricles is, therefore, given by:
+		\[ \psi(x,t) = \sqrt{\frac{4}{5L}}\sin\big(\frac{2\pi x}{L}\big)e^{\frac{-i\pi ht}{mL^2}} + \sqrt{\frac{6}{5L}}\sin\big(\frac{3\pi x}{L}\big)e^{\frac{-9i\pi ht}{4mL^2}} \]
+				
+	\end{enumerate}
+\end{document} 

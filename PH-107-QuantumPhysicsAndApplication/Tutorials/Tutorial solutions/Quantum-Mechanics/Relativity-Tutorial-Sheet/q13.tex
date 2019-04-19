@@ -1,0 +1,49 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=80pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\title{PH-105 Assignment Sheet - 1}
+\author{Vaibhav Krishan}
+\date{}
+\maketitle
+\begin{enumerate}
+\item[13.]{ An observer in an initial frame S notices three events, the co-ordinates of which are given as follows.\\
+E1: (x = 0, y = 0, z = 0, t = 0)\\
+E2: (x = 9 km, y = 0, z = 0, t = 5x10-5s)\\
+E3: (x = 6 km, y = 3 km, z = 0, t = 1x10-5 s)\\
+(a) Find the proper time interval between events E1 and E2.  Also find the proper time interval between events E1 and E3.\\
+(b) Is it possible to find a frame S’ moving along +x-direction of S, in which events E1 and E2 would occur at same place or same time? If yes find the speed of that frame relative to S. Please specify clearly, whether in frame S’ events are occurring at the same place or same time or both. \\
+(c) Imagine another frame S" moving along +x-direction of S. In the S˝ frame, the difference \begin{math} \Delta \end{math}x" between the x" coordinates of the events E1 and E3 is found to be \begin{math} 3\sqrt 3\end{math} km. Find \begin{math} \Delta \end{math}t", the time difference between events E1 and E3 as seen in the frame S".\\
+
+
+{\underline {\bf Solution}} : \\
+(a) First for E1 and E2 \begin{math} \Delta r = 9km, c*\Delta t = 15km  \end{math} thus E1 and E2 are time-like.\\
+So proper time = \begin{math} \sqrt{\Delta t^2 - (\Delta r/c)^2} = \sqrt{(5*10^{-5})^2 - (9*10^3/(3*10^8))^2} \end{math}\\
+proper time = \begin{math} 4*10^{-5} s.\end{math}\\
+Now for E1 and E3 \begin{math} \Delta r = \sqrt{45} km\end{math} and \begin{math} c*\Delta t = 3km \end{math} thus they are space like intervals.\\
+so proper distance = \begin{math} \sqrt{45^2 - 3^2} km = 44.899 Km \end{math}.\\
+proper time would be imaginary.\\
+(b) as E1 and E2 are time like intervals no frame can be found which sees them at same time while same x is possible.\\
+Such a frame will have velocity = \begin{math} \Delta r / \Delta t = 9*10^3 / 5 * 10^{-5} m/s = 1.8 * 10^8 m/s = 0.6c \end{math}\\
+Events occur at same place.\\
+(c) \begin{math}
+\Delta x = 6Km, \Delta t = 10^{-5} s, \Delta x" = 3\sqrt3 Km.\\
+\Delta x" = \gamma(\Delta x - v*\Delta t)\\
+3\sqrt3 = 1/\sqrt{(1-(v/c)^2)}(6 - v*10^{-5})\\
+3\sqrt3 = 1/\sqrt{c^2 - v^2}(6c - 3v)\\
+\sqrt{3(c^2-v^2)} = (2c - v)\\
+3c^2 - 3v^2 = 4c^2 + v^2 - 4cv\\
+4v^2 - 4cv + c^2 = 0\\
+(2v - c)^2 = 0\\
+v = c/2\\
+\Delta t" = \gamma(\Delta t - \Delta x * v / c^2)\\
+\Delta t" = 1/\sqrt{1-(1/2)^2}(10^{-5} - 6*10^3 * 1.5*10^8 / 9*10^16)\\
+\Delta t" = 2/\sqrt3(10^{-5} - 10^{-5})\\
+\Delta t" = 0\\
+\end{math}
+}
+\end{enumerate}
+
+\end{document}

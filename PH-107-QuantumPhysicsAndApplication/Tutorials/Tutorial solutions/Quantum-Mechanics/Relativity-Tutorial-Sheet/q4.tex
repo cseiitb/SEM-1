@@ -1,0 +1,44 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=80pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\title{PH-105 Assignment Sheet - 1}
+\author{Ashwin P. Paranjape}
+\date{}
+\maketitle
+\begin{enumerate}
+\item[4.]{An inertial frame $S'$  moves relative to another frame $S$ with a velocity $v_1 \hat{i} + v_2 \hat{j}$ in such a way that $x$ and $x'$ axes and $y$ and $y'$ axes and $z$ and $z'$ axes are always parallel. Let the time $t=t'=0$ when the origin of the frames are coincident. Find the lorentz transformation relaing the coordinates and time of $S'$ to those in $S$.\\
+
+
+{\underline {\bf Solution}} : \\
+As we know the Lorentz transformation when relative velocity is along x axis, we need to convert the coordinates of the two given frames $S$ and $S'$ to $S_R$ and $S_R'$ respectively. Here the frames $S_R$ and $S_R'$ are rotated frames such that the relative velocity between these frames is along the $x_R$ and $x_R'$ axes. Let $\theta = tan^-1(v_2/v_1)$ and v be the magnitude of velocity vector. Thus angle between $S_R$ and $S$ is $\theta$, $S_R'$ and $S'$ is $\theta$.
+
+To get $S_R$ from $S$, we take take components of $x$ and $y$ axes along $x_R$ and $y_R$. Note that time coordinate does not change due to rotation.
+\[x_R = x cos \theta + y sin \theta \]
+\[y_R = y cos \theta - x sin \theta \]
+\[t_R = t\]
+
+Now to get $x_R'$ and $y_R'$ we use lorentz transformation.
+
+\[x_R'=\gamma ( x_R - vt_R) = \gamma (x cos\theta + y sin\theta - v t)\]
+\[y_R' = y_R = y cos \theta - xsin\theta\]
+\[t_R'= \gamma (t_R - \frac{v x_R}{c^2}) = t-\frac{v (xcos\theta+ysin\theta)}{c^2}\]
+
+To get $x'$ and $y'$ we use take components of $x_R'$ and $y_R'$ on $x'$ and $y'$
+\begin{eqnarray*}
+x' &=&x_R' cos \theta - y_R' sin \theta \\&= &\gamma ( x cos \theta + y sin \theta - vt)cos\theta - (ycos\theta -xsin\theta)sin\theta\\
+   &= &x(\gamma cos^2 \theta +sin^2 \theta) + y (\gamma sin \theta cos \theta - cos \theta sin \theta)-\gamma v t cos \theta\\
+y' &= &y_R' cos \theta + x_R' sin \theta \\
+   &=& (ycos\theta - xsin\theta)cos\theta + \gamma (xcos\theta +ysin\theta -vt) sin\theta\\
+   &= &(ycos^2\theta - xsin\theta cos\theta)+ \gamma (xcos\theta sin\theta +ysin^2\theta-vt sin\theta)\\
+   &= &y(cos^2\theta +\gamma sin^2\theta) + x(\gamma cos\theta sin \theta-cos\theta sin \theta) - \gamma v t sin\theta\\
+t' &= &t_R'\\
+   &= &\gamma (t - v \frac{x cos \theta + y sin \theta}{c^2})
+\end{eqnarray*}
+}
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,149 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=60pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\begin{document}
+\title{PH-105 Assignment Sheet - 1}
+\date{}
+\author{Umang Mathur}
+\maketitle
+\begin{enumerate}
+\item[14.] {\bf A particle of mass $m$ is moving with a constant velocity in the $x-y$ plane of an inertial frame S. The observer in S finds that the particle travels a distance of 600 m in a time of $2.5\times 10^{-6}s$. During this time both the $x$ and $y$ co-ordinates of the particle increase. The increase in the $x$ coordinate is 300 m during the given duration.}
+\begin{enumerate}
+\item {\bf Find the proper time difference for the displacement described above.}
+\item {\bf Find the components of the displacement four vector $\Delta\underset{\sim}{s}$ and the momentum four vector $\underset{\sim}{p}$ .}
+\item {\bf Find the components of the displacement four vector $\Delta\underset{\sim}{s}'$ and the momentum four vector $\underset{\sim}{p}'$ in a frame S′, which moves with a speed of $0.5c$ along $+x$-direction of S.}
+\end{enumerate}
+
+{\underline {\bf Solution}} :\\
+\begin{enumerate}
+\item In the above problem, $\Delta x$ = 300m, $\Delta y$ = $\sqrt{600^{2} - 300^{2}}m$ = 300$\sqrt{3}$m and $\Delta t$ = $2.5\times 10^{-6}s$
+
+Hence, 
+	\begin{align*}
+		\mbox{Proper Time} &= \Delta \tau\\
+		&= \sqrt{(\Delta t)^{2}-\frac{(\Delta x)^{2}+(\Delta y)^{2}+(\Delta z)^{2}}{c^{2}}}\\
+		&= \sqrt{(2.5\times 10^{-6})^{2}-\frac{600^{2}}{(3\times 10^{8})^{2}}}\\
+		&= 1.5\times 10^{-6}s
+	\end{align*}
+\item Displacement four vector $\Delta\underset{\sim}{s}$ = 
+$\begin{pmatrix}
+  \Delta x\\
+  \Delta y\\
+  \Delta z\\
+  ic\Delta t
+\end{pmatrix}
+=
+\begin{pmatrix}
+  300 \mbox{ m}\\
+  300\sqrt{3} \mbox{ m}\\
+  0 \mbox{ m}\\
+  750i \mbox{ m}
+\end{pmatrix}$
+
+
+Velocity of particle = $\overrightarrow{u} = \frac{300}{2.5\times 10^{-6}}\hat{i} + \frac{300\sqrt{3}}{2.5\times 10^{-6}}\hat{j} \mbox{ m/s} = 120\times10^{6}\hat{i} + 120\sqrt{3}\times10^{6}\hat{j} \mbox{ m/s}$\\\\
+
+Hence,  $\gamma_{u} = \frac{1}{\sqrt{1-\frac{u^{2}}{c^{2}}}} = \frac{5}{3}$
+
+Momentum four vector  $\underset{\sim}{p} = 
+\begin{pmatrix}
+  m\gamma_{u}u_{x}\\
+  m\gamma_{u}u_{y}\\
+  m\gamma_{u}u_{z}\\
+  m\gamma_{u}ic
+\end{pmatrix}
+=
+\begin{pmatrix}
+  \frac{2}{3}mc \mbox{ m/s}\\
+  \frac{2\sqrt{3}}{3}mc \mbox{ m/s}\\
+  0\\
+  \frac{5}{3} \mbox{ m/s}
+\end{pmatrix}
+$
+\item The displacement and the momentum four-vectors get transformed as per the Lorentz transformation as follows:\\\\
+
+$
+\begin{pmatrix}
+  \Delta x'\\
+  \Delta y'\\
+  \Delta z'\\
+  ic\Delta t'
+\end{pmatrix}
+=
+\begin{pmatrix}
+  \gamma & 0 & 0 & i\beta\gamma\\
+  0 & 1 & 0 & 0\\
+  0 & 0 & 1 & 0\\
+  -i\beta\gamma & 0 & 0 & \gamma
+\end{pmatrix}
+\begin{pmatrix}
+  \Delta x\\
+  \Delta y\\
+  \Delta z\\
+  ic\Delta t
+\end{pmatrix}
+$\\\\\\
+$
+\begin{pmatrix}
+  m\gamma_{u'}u'_{x}\\
+  m\gamma_{u'}u'_{y}\\
+  m\gamma_{u'}u'_{z}\\
+  m\gamma_{u'}ic
+\end{pmatrix}
+=
+\begin{pmatrix}
+  \gamma & 0 & 0 & i\beta\gamma\\
+  0 & 1 & 0 & 0\\
+  0 & 0 & 1 & 0\\
+  -i\beta\gamma & 0 & 0 & \gamma
+\end{pmatrix}
+\begin{pmatrix}
+  m\gamma_{u}u_{x}\\
+  m\gamma_{u}u_{y}\\
+  m\gamma_{u}u_{z}\\
+  m\gamma_{u}ic
+\end{pmatrix}
+$\\\\
+Here, $\gamma = \frac{1}{\sqrt{1-\frac{v^{2}}{c^{2}}}}$\\\\
+$\beta = \frac{v}{c}$\\\\
+$u'_{x} = \frac{u_{x} - v}{1-\frac{v u_{x}}{c^{2}}}$\\\\
+$u'_{y} = \frac{u_{y}}{\gamma(1-\frac{v u_{x}}{c^{2}})}$\\\\
+$u'_{z} = \frac{u_{z}}{\gamma(1-\frac{v u_{x}}{c^{2}})}$\\\\
+$\gamma_{u'} = \frac{1}{\sqrt{1 - \frac{u'^{2}_{x} + u'^{2}_{y} + u'^{2}_{z}}{c^{2}}}}$\\\\
+where, $v$ is the speed of the $primed$ frame with respect to the $un-primed$ frame. Here, $v = 0.5c$. Thus, plugging in values and solving the matrix products, we get\\\\
+Displacement four vector $\Delta\underset{\sim}{s}'$ = 
+$\begin{pmatrix}
+  \Delta x'\\
+  \Delta y'\\
+  \Delta z'\\
+  ic\Delta t'
+\end{pmatrix}
+=
+\begin{pmatrix}
+  -50\sqrt{3} \mbox{ m}\\
+  300\sqrt{3} \mbox{ m}\\
+  0 \mbox{ m}\\
+  400\sqrt{3}i \mbox{ m}
+\end{pmatrix}$
+
+
+Momentum four vector  $\underset{\sim}{p'} = 
+\begin{pmatrix}
+  m\gamma_{u'}u'_{x}\\
+  m\gamma_{u'}u'_{y}\\
+  m\gamma_{u'}u'_{z}\\
+  m\gamma_{u'}ic
+\end{pmatrix}
+=
+\begin{pmatrix}
+  \frac{-\sqrt{3}}{9}mc \mbox{ m/s}\\
+  \frac{2\sqrt{3}}{3}mc \mbox{ m/s}\\
+  0\\
+  \frac{-8\sqrt{3}}{9}imc \mbox{ m/s}
+\end{pmatrix}
+$
+\end{enumerate}
+\end{enumerate}
+\end{document} 

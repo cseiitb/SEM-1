@@ -1,0 +1,47 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=60pt, bottom=50pt, left=72pt, right=55pt]{geometry}
+\usepackage{enumerate}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+	\title{PH-105 Assignment Sheet - 3 (Quantum Mechanics - 2)}
+	\date{}
+	\author{Umang Mathur}
+	\maketitle
+	\begin{enumerate}
+		\item[51.] {\bf If $\phi_{n}(x)$ are the solutions of time independent Schrödinger equation, with energies $E_{n}$, show that $\psi(x,t) =  \sum\limits_{n} C_n\phi_{n}(x)e^{\frac{-iE{n}t}{\hbar}} $, where $C_{n}$ are constants, is a solution of time dependent Schrödinger equation. However, show that $\psi(x,0)$ is not a solution of the time independent Schrödinger equation}\\\\
+		{\underline {\bf Solution}} :\\
+		The Time Independent Schrodinger Equation for one-dimensional space is:
+		\[ \hat{H}\psi = \hat{E}\psi\]
+		where, $\hat{H} = \frac{-\hbar^{2}}{2m}\frac{\partial^{2}}{\partial x^{2}}$ and $\hat{E} = i\hbar\frac{\partial}{\partial t}$.\\\\
+		Also, since $\phi_{n}(x)$ are the solutions of time independent Schrödinger equation, with energies $E_{n}$,
+		\begin{equation}
+			\frac{-\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}\bigg(\phi_n(x)\bigg) = E_n\phi_n(x)
+		\end{equation}
+		Thus, we have,
+		\begin{align*}
+			\hat{H}\psi(x,t) &= \frac{-\hbar^{2}}{2m}\frac{\partial^{2}}{\partial x^{2}}\sum\limits_{n} C_n\phi_{n}(x)e^{\frac{-iE_{n}t}{\hbar}}\\
+			&= \sum\limits_{n} C_n e^{\frac{-iE_{n}t}{\hbar}} \bigg( \frac{-\hbar^{2}}{2m}\frac{d^{2}\phi_n(x)}{d x^{2}}\bigg)\\
+			&= \sum\limits_{n} C_n e^{\frac{-iE_{n}t}{\hbar}} \bigg(E_n\phi_n(x)\bigg) \text{   using (1)}
+		\end{align*}
+		Similarly,
+		\begin{align*}
+			\hat{E}\psi(x,t) &= i\hbar\frac{\partial}{\partial t}\sum\limits_{n} C_n\phi_{n}(x)e^{\frac{-iE_{n}t}{\hbar}}\\
+			&= \sum\limits_{n} C_n \phi_n(x) \bigg( i\hbar\frac{\partial}{\partial t}\Big( e^{\frac{-iE{n}t}{\hbar}} \Big)\bigg)\\
+			&= \sum\limits_{n} C_n e^{\frac{-iE_{n}t}{\hbar}} \bigg(E_n\phi_n(x)\bigg)
+		\end{align*}
+		Thus, \[ \hat{H}\psi(x,t) = \hat{E}\psi(x,t)\]
+		However,
+		\[ \hat{H}\psi(x,0) = \sum\limits_{n} C_n E_n\phi_n(x) \].
+		Thus, for $\psi(x,0)$ to be a solution of TISE, we must have $\hat{H}\psi(x,0) = E\psi(x,0)$ for some real constant E, i.e.,
+		\begin{align*}
+			&\sum\limits_{n} C_n E_n\phi_n(x) = E\big(\sum\limits_{n} C_n\phi_n(x)\big) \\
+			&\sum\limits_{n} C_n \phi_n(x) \big(E - E_n\big) = 0
+		\end{align*}
+		However, since, $\hat{H}$ is a Hermitian operator, the eigenvalues $\phi_n(x)$ must be orthogonal (and therefore, linearly independent).\\
+		Thus, this is possible only if $E = E_n \forall  n$.\\
+		But, since all $E_n$s are distinct (assuming non-degenerate levels in one-dimensional space), this is not possible unless $\psi(x,t)$ is not a linear combination but only a single eigen-function.
+	\end{enumerate}
+\end{document} 
+
